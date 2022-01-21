@@ -3,6 +3,7 @@ import CssButton from './CssButton';
 import CssModuleButton from './CssModuleButton';
 import InlineStyleButton from './InlineStyleButton';
 import StyledComponentButton from './StyledComponentButton';
+import EmotionCssButton from './EmotionCssButton';
 
 import './App.css';
 
@@ -12,7 +13,8 @@ const App = () => {
       <CssButton text="I'm a CssButton" />
       <CssModuleButton text="I'm a CssModuleButton" />
       <InlineStyleButton text="I'm an InlineStyleButton" />
-      <StyledComponentButton text="I'm an StyledComponentButton" />
+      <EmotionCssButton text="I'm an EmotionCssButton" />
+      <StyledComponentButton text="I'm a StyledComponentButton" />
     </div>
   );
 };

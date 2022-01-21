@@ -1,7 +1,8 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
 
-const Button = styled.button`
+const style = css`
   font-size: 20px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -30,13 +31,17 @@ const Button = styled.button`
   }
 `;
 
-const StyledComponentButton = ({ onClick, text }) => {
-  return <Button onClick={onClick}>{text}</Button>;
+const EmotionCssButton = ({ onClick, text }) => {
+  return (
+    <button css={style} onClick={onClick}>
+      {text}
+    </button>
+  );
 };
 
-StyledComponentButton.propTypes = {
+EmotionCssButton.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
 
-export default StyledComponentButton;
+export default EmotionCssButton;
