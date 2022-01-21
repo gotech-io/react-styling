@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css } from '@emotion/react/macro';
 import PropTypes from 'prop-types';
 
 const style = css`
